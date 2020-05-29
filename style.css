@@ -18,7 +18,11 @@ section{
 }
 
 footer{
-    color: yellow;
+    color: rgb(247, 182, 62);
     text-align: center;
     font-style: italic;
+}
+
+input {
+    width: 200px;
 }

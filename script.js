@@ -15,9 +15,13 @@ function calcular(){
         Results.innerHTML = "<p>Resultado: </p>"
 
         var delta = (b**2)-4*a*c
+
+        Xvertice = -b/(2*a)
+        Yvertice = (-1*delta)/(4*a)
         
         if (delta < 0){
-            Results.innerHTML += "Delta negativo não possui raiz real"
+            Results.innerHTML += ` Delta: ${delta}<br>
+            Delta negativo não possui raiz real`
         }else if(delta == 0){
             var x1 = (b*(-1))/(2*a)
 
@@ -33,7 +37,9 @@ function calcular(){
 
             Results.innerHTML += `Delta: ${delta}<br>
             x' = ${x1.toFixed(2)}<br>
-            x" = ${x2.toFixed(2)}`
+            x" = ${x2.toFixed(2)}<br>
+            vertice = (${Xvertice}, ${Yvertice})
+            `
         }
         
     }
